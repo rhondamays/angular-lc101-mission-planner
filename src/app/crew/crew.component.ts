@@ -13,6 +13,7 @@ export class CrewComponent implements OnInit {
     {name: "Ellen Ochoa", firstMission: true}
   ];
 
+  constructor() { }
   add(memberName: string, isFirst: boolean) {
     this.crew.push({name: memberName, firstMission: isFirst});
   }
@@ -32,8 +33,6 @@ export class CrewComponent implements OnInit {
     member['name'] = name;
     this.memberBeingEdited = null;
     }
-  constructor() { }
-
   ngOnInit() {
   }
 
